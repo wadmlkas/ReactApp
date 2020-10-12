@@ -1,0 +1,19 @@
+.breadcrumb {
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.breadcrumb-link {
+    text-decoration: none;
+    color: #303133;
+}
+
+.breadcrumb-seperator {
+    margin: 0 9px;
+    color: #c0c4cc;
+    font-weight: 700;
+    vertical-align: -0.09em;
+}

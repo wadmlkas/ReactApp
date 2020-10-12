@@ -1,0 +1,121 @@
+.sidebar-container {
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #304156;
+    overflow: hidden;
+}
+
+.sidebar-container-shrink {
+    @extend .sidebar-container;
+    width: 36px;
+}
+
+.sidebar {
+    position: absolute;
+    width: 100%;
+    border-right: solid 1px #e6e6e6;
+}
+
+.sidebar-link {
+    color: rgb(191, 203, 217);
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar-link:active {
+    color: rgb(64, 158, 255);
+}
+
+.sidebar-item {
+    margin: auto;
+    padding: 0 20px;
+    font-family: "Gill Sans", sans-serif;
+    height: 56px;
+    box-sizing: border-box;
+    list-style: none;
+    line-height: 56px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-item-shrink {
+    @extend .sidebar-item;
+    justify-content: center;
+    padding: 0;
+}
+
+.sidebar-item:hover,
+.sidebar-item-shrink:hover {
+    background: rgb(29, 49, 71);
+}
+
+.sidebar-sub-item {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #1f2d3d;
+    height: 50px;
+    box-sizing: border-box;
+    list-style: none;
+    line-height: 50px;
+}
+
+.sidebar-sub-item:hover {
+    background-color: rgb(16, 28, 41);
+}
+
+.sidebar-icon {
+    margin-right: 15px;
+}
+
+.sidebar-icon-shrink {
+}
+
+.sidebar-text {
+    position: relative;
+    bottom: 3px;
+}
+
+.sidebar-icon-arrow {
+    position: absolute;
+    top: 30%;
+    right: 15px;
+    font-size: 16px;
+}
+
+.tooltip {
+    width: 128px;
+    background-color: #304156;
+    margin-left: 10px;
+}
+
+.tooltip-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(191, 203, 217);
+    font-size: 15px;
+}
+
+.tooltip-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.tooltip-item:hover {
+    background-color: #1f2d3d;
+}
+
+.tooltip-icon {
+    @extend .sidebar-icon;
+}
